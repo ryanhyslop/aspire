@@ -1,0 +1,65 @@
+/* =====================================		
+	Base
+	--------------
+	- Define default styling for markup all variables are declared in _vars.scss
+
+================================= */
+
+html {
+	font-size:100%:
+}
+
+body {
+	font-size:1rem
+}
+
+
+/* =====================================		
+	!Typography
+================================= */
+
+/*
+ Headings
+ ------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+}
+
+
+h1, .h1 {
+	@include font-size($h1-fontsize)
+}
+
+h2, .h2 {
+	@include font-size($h2-fontsize)
+}
+
+h3, .h3 {
+	@include font-size($h3-fontsize)
+}
+
+h4, .h4 {
+	@include font-size($h4-fontsize)
+}
+
+h5, .h5 {
+	@include font-size($h5-fontsize)
+}
+
+/*
+ Paragraph / List
+ ------------------------------ */
+
+p {
+
+}
+
+li {
+
+}
+
+

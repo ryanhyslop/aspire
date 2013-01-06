@@ -1,0 +1,53 @@
+/* =====================================		
+	!Aspire Framework Main Stylesheet
+	--------------
+	- This sheet is responsible for importing and documenting partials
+	  Imports should respect css specifitity, low level helpers at the top, specific at the top.
+
+================================= */
+
+
+/*
+ Site wide variables / margins
+ ------------------------------ */
+@import '_vars';
+
+/*
+ Project Specific Mixins
+ ------------------------------ */
+@import '_mixins';
+
+/*
+ Get us up good and consistant (http://necolas.github.com/normalize.css/)
+ ------------------------------ */
+@import 'lib/_normalize';
+
+
+/*
+ Base styling ( no classes )
+ ------------------------------ */
+@import '_base';
+
+/*
+ Layout / Grids 
+ ------------------------------ */
+@import '_layout';
+
+
+
+
+/* =====================================		
+	!Modules
+	--------------
+	- Modules form the bulk of our styling start generic and make specific if required
+================================= */
+
+/*
+ Modules: The first import includes small basic helper and utility modules
+ ------------------------------ */
+ @include '_modules';
+
+/*
+  M:CMS - Format output from the sites cms
+  ------------------------------ */ 
+ @include 'modules/_cms';

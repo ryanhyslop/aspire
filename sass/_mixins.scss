@@ -1,0 +1,16 @@
+/* =====================================		
+	Mixins
+	--------------
+	- Any non-compass mixins that are required for the projects & some common ones
+================================= */
+
+/*
+ Typography
+ ------------------------------ */
+
+// font-size takes a px value and returns rem & px fallback
+
+@mixin font-size ( $size ){
+  	font-size: $size + px;
+  font-size: ($size / $base-font-size) + rem;
+}

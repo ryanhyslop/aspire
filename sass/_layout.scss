@@ -1,0 +1,20 @@
+/* =====================================		
+	Layout
+	--------------
+	- Anything that determins structure and alignment should be added here, prefixed with .l-
+================================= */
+
+
+/*
+ !Common
+ ------------------------------ */
+
+// Class to constrain and optionally center layouts
+ .l-constrain {
+ 	@extend .cf;
+
+ 	max-width: $base-max-width;
+ 	margin: 0 auto;
+ }
+
+
