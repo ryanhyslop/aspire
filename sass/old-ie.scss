@@ -1,0 +1,12 @@
+/* =====================================		
+	Old IE Stylesheet
+	--------------
+	- This sheet builds a completely independant stylesheet of IE pulling styles from media queries less than the
+	  value set in $fix-mqs.
+================================= */
+	
+	$old-ie: true;
+	
+	$fix-mqs: 60em;
+	
+	@import 'style';

@@ -6,6 +6,7 @@
 
 ================================= */
 
+@import 'compass';
 
 /*
  Site wide variables / margins
@@ -45,9 +46,9 @@
 /*
  Modules: The first import includes small basic helper and utility modules
  ------------------------------ */
- @include '_modules';
+ @import '_modules';
 
 /*
   M:CMS - Format output from the sites cms
   ------------------------------ */ 
- @include 'modules/_cms';
+ //@include 'modules/_cms';

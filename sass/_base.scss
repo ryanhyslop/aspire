@@ -6,11 +6,17 @@
 ================================= */
 
 html {
-	font-size:100%:
+	font-size: 100%;
 }
 
 body {
-	font-size:1rem
+	@include font-size($base-font-size);
+	line-height: $line-height-ratio;
+}
+
+// http://paulirish.com/2012/box-sizing-border-box-ftw/
+* {
+	@include box-sizing(border-box);
 }
 
 
@@ -26,40 +32,48 @@ h2,
 h3,
 h4,
 h5 {
-
+	margin-top:0; // Top Margins nearly always give headaches, always space down.
+	margin-bottom: $base-spacing-unit;
 }
 
 
 h1, .h1 {
-	@include font-size($h1-fontsize)
+	@include font-size($h1-size);
 }
 
 h2, .h2 {
-	@include font-size($h2-fontsize)
+	@include font-size($h2-size);
 }
 
 h3, .h3 {
-	@include font-size($h3-fontsize)
+	@include font-size($h3-size);
 }
 
 h4, .h4 {
-	@include font-size($h4-fontsize)
+	@include font-size($h4-size);
 }
 
 h5, .h5 {
-	@include font-size($h5-fontsize)
+	@include font-size($h5-size);
 }
 
 /*
  Paragraph / List
  ------------------------------ */
 
-p {
+ul {
+	margin-top:0;
+	margin-bottom: $base-spacing-unit;
+}
 
+p {
+	margin-top:0;
+	margin-bottom: $half-spacing-unit;
 }
 
 li {
-
+	margin-top:0;
+	margin-bottom: $half-spacing-unit;
 }
 
 

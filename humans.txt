@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Ryan Hyslop -- Frontend Developer -- @ryanhyslop
 
 # THANKS
 
-    <name>
+
 
 # TECHNOLOGY COLOPHON
 
