@@ -2,8 +2,8 @@
 'use strict';
 
 var settings = {
-		webserverport : '8080',
-		wwwroot: '',
+		webserverport : '7000',
+		wwwroot: 'docs',
 		pattern_path: 'patterns',
 		sourcehtmlfile: 'source.html',
 		tofile_outputpath: 'docs'

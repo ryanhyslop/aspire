@@ -1,0 +1,33 @@
+/* =====================================
+    Nav
+    --------------
+    - A navigation abstraction for varients of blocks of links, heavily influenced by:
+     * http://csswizardry.com/2011/09/the-nav-abstraction/
+     * https://github.com/csswizardry/inuit.css/blob/master/objects/_nav.scss
+================================= */
+
+.nav {
+    @extend .cf;
+    list-style:none;
+    margin-left:0;
+
+    > li {
+        &,
+        > a {
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+        }
+    }
+}
+
+
+
+
+/*
+ Site Navigation
+ ------------------------------ */
+
+ .nav--site {
+
+ }
