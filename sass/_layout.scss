@@ -1,112 +1,31 @@
-/* =====================================		
+/* =====================================
 	Layout
 	--------------
 	- Anything that determins structure and alignment should be added here, prefixed with .l-
 ================================= */
 
 
-/* =====================================		
+/* =====================================
 	!Grids
 	--------------
-	- A Grid helper system
+     - Stop worrying and go to the pub http://dbushell.com/2013/03/19/on-responsive-layout-and-grids/
 ================================= */
 
 .l-grid {
-	// Container for grids
-	@extend .cf;
+    @extend .cf;
+    margin: 0 -1.5em;
 }
 
-    /**
-    * Whole
-    */
-    %lg-full         { width:100%; }
+.l-grid-unit {
+    @include box-sizing(border-box);
+    display: block;
+    float: left;
+    padding: 0 1.5em;
+    width: 100%;
+}
 
 
-    /**
-    * Halves
-    */
-    %lg-half          { width:50%; }
-
-
-    /**
-    * Thirds
-    */
-    %lg-one-third         { width:33.333%; }
-    %lg-two-thirds        { width:66.666%; }
-
-
-    /**
-    * Quarters
-    */
-    %lg-one-quarter       { width:25%; }
-    %lg-two-quarters      { @extend %lg-one-half; }
-    %lg-three-quarters    { width:75%; }
-
-
-    /**
-    * Fifths
-    */
-    %lg-one-fifth         { width:20%; }
-    %lg-two-fifths        { width:40%; }
-    %lg-three-fifths      { width:60%; }
-    %lg-four-fifths       { width:80%; }
-
-
-    /**
-    * Sixths
-    */
-    %lg-one-sixth         { width:16.666%; }
-    %lg-two-sixths        { @extend %lg-one-third; }
-    %lg-three-sixths      { @extend %lg-one-half; }
-    %lg-four-sixths       { @extend %lg-two-thirds; }
-    %lg-five-sixths       { width:83.333%; }
-
-
-    /**
-    * Eighths
-    */
-    %lg-one-eighth        { width:12.5%; }
-    %lg-two-eighths       { @extend %lg-one-quarter; }
-    %lg-three-eighths     { width:37.5%; }
-    %lg-four-eighths      { @extend %lg-one-half; }
-    %lg-five-eighths      { width:62.5%; }
-    %lg-six-eighths       { @extend %lg-three-quarters; }
-    %lg-seven-eighths     { width:87.5%; }
-
-
-    /**
-    * Tenths
-    */
-    %lg-one-tenth         { width:10%; }
-    %lg-two-tenths        { @extend %lg-one-fifth; }
-    %lg-three-tenths      { width:30%; }
-    %lg-four-tenths       { @extend %lg-two-fifths; }
-    %lg-five-tenths       { @extend %lg-one-half; }
-    %lg-six-tenths        { @extend %lg-three-fifths; }
-    %lg-seven-tenths      { width:70%; }
-    %lg-eight-tenths      { @extend %lg-four-fifths; }
-    %lg-nine-tenths       { width:90%; }
-
-
-    /**
-    * Twelfths
-    */
-    %lg-one-twelfth       { width:8.333%; }
-    %lg-two-twelfths      { @extend %lg-one-sixth; }
-    %lg-three-twelfths    { @extend %lg-one-quarter; }
-    %lg-four-twelfths     { @extend %lg-one-third; }
-    %lg-five-twelfths     { width:41.666% }
-    %lg-six-twelfths      { @extend %lg-one-half; }
-    %lg-seven-twelfths    { width:58.333%; }
-    %lg-eight-twelfths    { @extend %lg-two-thirds; }
-    %lg-nine-twelfths     { @extend %lg-three-quarters; }
-    %lg-ten-twelfths      { @extend %lg-five-sixths; }
-    %lg-eleven-twelfths   { width:91.666%; }
-
-
-
-
-/* =====================================		
+/* =====================================
 	!Common
 	--------------
 	- Layout elements that generally appear throughout the site
@@ -117,7 +36,6 @@
  ------------------------------ */
  .l-constrain {
  	@extend .cf;
-
  	max-width: $base-max-width;
  	padding: 0 $half-spacing-unit;
 
@@ -132,7 +50,7 @@
 
 	@include respond-min($bp-tablet) {
 		background-color: #eee;
-	
+
 	}
 
 	@include respond-max($bp-tablet) {
@@ -146,3 +64,9 @@
 .l-side {
 
 }
+
+
+.l-grid--2-up .l-grid-unit {
+    width:50%;
+}
+

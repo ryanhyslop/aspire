@@ -1,9 +1,13 @@
-/* =====================================		
+/* =====================================
 	Base
 	--------------
 	- Define default styling for markup all variables are declared in _vars.scss
 
 ================================= */
+// http://paulirish.com/2012/box-sizing-border-box-ftw/
+* {
+	@include box-sizing(border-box);
+}
 
 html {
 	font-size: 100%;
@@ -14,13 +18,7 @@ body {
 	line-height: $line-height-ratio;
 }
 
-// http://paulirish.com/2012/box-sizing-border-box-ftw/
-* {
-	@include box-sizing(border-box);
-}
-
-
-/* =====================================		
+/* =====================================
 	!Typography
 ================================= */
 
